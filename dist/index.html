@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070c12">
+  <meta name="description" content="Dark Threat Radar is an autonomous, lightweight Cyber Threat Intelligence engine that collects, correlates and presents public threat intelligence in one operational workspace.">
+  <meta property="og:title" content="Dark Threat Radar — Autonomous CTI Engine">
+  <meta property="og:description" content="One operational view for vulnerabilities, IOCs, malware, ransomware, advisories and the intelligence that matters to you.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://darkthreatradar.com">
+  <meta property="og:image" content="https://darkthreatradar.com/assets/dashboard.jpeg">
+  <title>Dark Threat Radar — Autonomous CTI Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Dark Threat Radar home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>DARK THREAT RADAR</span>
+      <small>CTI ENGINE</small>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#platform" data-i18n="nav.platform">Platform</a>
+      <a href="#workflow" data-i18n="nav.workflow">Workflow</a>
+      <a href="#watchlist">Watchlist</a>
+      <a href="#deploy" data-i18n="nav.deploy">Deploy</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-switch" type="button" aria-label="Change language"><span class="active">EN</span><span>PT</span></button>
+      <a class="button button-ghost" href="https://github.com/fr3dux/dark-threat-radar" rel="noreferrer">GitHub ↗</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span><span data-i18n="hero.eyebrow">OPEN-SOURCE // AUTONOMOUS CTI</span></p>
+        <h1 data-i18n="hero.title">Turn public threat data into operational intelligence.</h1>
+        <p class="hero-lede" data-i18n="hero.lede">Dark Threat Radar continuously collects, normalizes and correlates vulnerabilities, malicious infrastructure, ransomware exposure and security advisories — in one analyst-ready workspace.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://github.com/fr3dux/dark-threat-radar#quickstart-with-docker-compose" rel="noreferrer" data-i18n="hero.install">Deploy with Docker</a>
+          <a class="button button-secondary" href="#demo" data-i18n="hero.demo">Explore the platform</a>
+        </div>
+        <div class="signal-strip" aria-label="Platform summary">
+          <div><strong>27</strong><span data-i18n="stats.connectors">PUBLIC CONNECTORS</span></div>
+          <div><strong>5m</strong><span data-i18n="stats.cycle">CORE INGESTION</span></div>
+          <div><strong>MIT</strong><span data-i18n="stats.license">OPEN SOURCE</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Dark Threat Radar operational interface preview">
+        <div class="radar-glow"></div>
+        <div class="preview-chrome">
+          <div class="preview-bar"><span></span><span></span><span></span><em>LIVE INTELLIGENCE WORKSPACE</em></div>
+          <img src="assets/dashboard.jpeg" alt="Dark Threat Radar dashboard showing global internet activity and threat intelligence telemetry">
+        </div>
+        <div class="floating-signal signal-one"><span></span>INGESTION ACTIVE</div>
+        <div class="floating-signal signal-two"><strong>2+</strong> SOURCE CORRELATION</div>
+      </div>
+    </section>
+
+    <section class="trust-line section-shell" aria-label="Integrated intelligence categories">
+      <span>VULNERABILITIES</span><i></i><span>IOC CORRELATION</span><i></i><span>MALWARE</span><i></i><span>RANSOMWARE</span><i></i><span>ATT&amp;CK</span><i></i><span>ADVISORIES</span>
+    </section>
+
+    <section id="platform" class="section-shell section-block platform-grid">
+      <div class="section-intro sticky-intro">
+        <p class="eyebrow">01 // <span data-i18n="platform.label">THE PLATFORM</span></p>
+        <h2 data-i18n="platform.title">Built for signal, not noise.</h2>
+        <p data-i18n="platform.copy">Every layer is designed to reduce context switching: provider-aware collection, normalized data, correlation and a single interface for investigation.</p>
+      </div>
+      <div class="capability-grid">
+        <article class="capability-card featured">
+          <span class="card-index">01</span>
+          <div class="icon-grid" aria-hidden="true"></div>
+          <h3 data-i18n="cards.correlation.title">Multi-source correlation</h3>
+          <p data-i18n="cards.correlation.copy">Normalize and deduplicate indicators while preserving every contributing provider and confidence signal.</p>
+          <ul><li>IPs, URLs, domains and hashes</li><li>Provider provenance</li><li>Lifecycle and confidence</li></ul>
+        </article>
+        <article class="capability-card">
+          <span class="card-index">02</span>
+          <h3 data-i18n="cards.exposure.title">Exposure intelligence</h3>
+          <p data-i18n="cards.exposure.copy">Track extortion disclosures and data breaches across independent public sources, not only ransomware labels.</p>
+          <div class="micro-chart"><b></b><b></b><b></b><b></b><b></b><b></b></div>
+        </article>
+        <article class="capability-card">
+          <span class="card-index">03</span>
+          <h3 data-i18n="cards.remediation.title">Official remediation</h3>
+          <p data-i18n="cards.remediation.copy">Connect CVEs, CISA KEV, EPSS and vendor advisories to the technologies your team actually operates.</p>
+          <div class="severity-row"><span>CRITICAL</span><span>KEV</span><span>EPSS</span></div>
+        </article>
+        <article class="capability-card wide">
+          <span class="card-index">04</span>
+          <div>
+            <h3 data-i18n="cards.visibility.title">Operational visibility</h3>
+            <p data-i18n="cards.visibility.copy">See connector health, synchronization state, source errors and collection paths without leaving the dashboard.</p>
+          </div>
+          <div class="health-viz" aria-hidden="true"><span></span><span></span><span></span><span class="warn"></span><span></span><b>DTR</b></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="workflow section-block">
+      <div class="section-shell">
+        <div class="section-intro horizontal-intro">
+          <div><p class="eyebrow">02 // <span data-i18n="workflow.label">INTELLIGENCE LIFECYCLE</span></p><h2 data-i18n="workflow.title">From collection to analyst action.</h2></div>
+          <p data-i18n="workflow.copy">Dark Threat Radar implements the essential CTI lifecycle as a continuous, observable pipeline.</p>
+        </div>
+        <div class="pipeline" aria-label="Cyber threat intelligence lifecycle">
+          <article><em>01</em><strong data-i18n="pipeline.collect">Collect</strong><span data-i18n="pipeline.collectCopy">Public feeds and authenticated community sources</span></article>
+          <article><em>02</em><strong data-i18n="pipeline.normalize">Normalize</strong><span data-i18n="pipeline.normalizeCopy">Consistent entities, timestamps and identifiers</span></article>
+          <article><em>03</em><strong data-i18n="pipeline.correlate">Correlate</strong><span data-i18n="pipeline.correlateCopy">Independent observations become stronger evidence</span></article>
+          <article><em>04</em><strong data-i18n="pipeline.analyze">Analyze</strong><span data-i18n="pipeline.analyzeCopy">Confidence, severity and organizational relevance</span></article>
+          <article><em>05</em><strong data-i18n="pipeline.act">Act</strong><span data-i18n="pipeline.actCopy">Alerts, investigation and remediation guidance</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="section-shell section-block intelligence-panel">
+      <div class="panel-heading">
+        <div><p class="eyebrow">03 // LIVE SOURCE TOPOLOGY</p><h2 data-i18n="topology.title">Know exactly where your intelligence comes from.</h2></div>
+        <div class="health-summary"><span><i class="green"></i> HEALTHY</span><span><i class="amber"></i> NEEDS AUTH</span><span><i class="red"></i> ERROR</span></div>
+      </div>
+      <div class="topology">
+        <div class="source-bank left-bank">
+          <span>CISA KEV</span><span>NVD CVE</span><span>EPSS</span><span>RANSOMWARE.LIVE</span><span>RANSOMFEED</span><span>RANSOMLOOK</span>
+        </div>
+        <svg class="flow-lines" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="lineGradient"><stop offset="0" stop-color="#35e06f" stop-opacity=".18"/><stop offset=".5" stop-color="#31d9e8"/><stop offset="1" stop-color="#35e06f" stop-opacity=".18"/></linearGradient></defs>
+          <path d="M40 32 C260 32 310 150 500 150 S740 32 960 32"/>
+          <path d="M40 78 C280 78 330 150 500 150 S720 78 960 78"/>
+          <path d="M40 124 C300 124 350 150 500 150 S700 124 960 124"/>
+          <path d="M40 176 C300 176 350 150 500 150 S700 176 960 176"/>
+          <path d="M40 222 C280 222 330 150 500 150 S720 222 960 222"/>
+          <path d="M40 268 C260 268 310 150 500 150 S740 268 960 268"/>
+        </svg>
+        <div class="engine-core"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><strong>DTR</strong><small>CTI ENGINE</small></div>
+        <div class="source-bank right-bank">
+          <span>MITRE ATT&amp;CK</span><span>THREATFOX</span><span>URLHAUS</span><span>MALWAREBAZAAR</span><span>ALIENVAULT OTX</span><span>MSRC</span>
+        </div>
+      </div>
+      <p class="topology-note" data-i18n="topology.note">Animated source health makes ingestion observable. The platform currently integrates 27 public CTI connectors across vulnerability, malware, network, ransomware, news and threat-knowledge categories.</p>
+    </section>
+
+    <section id="watchlist" class="section-shell section-block split-showcase">
+      <div class="showcase-copy">
+        <p class="eyebrow">04 // PERSONALIZED INTELLIGENCE</p>
+        <h2 data-i18n="watchlist.title">Your organizations, domains and technology — watched continuously.</h2>
+        <p data-i18n="watchlist.copy">The Watchlist turns the global data stream into a focused workspace. Monitor customers, brands, domains, countries, vendors, products and specific CVEs.</p>
+        <div class="feature-list">
+          <div><span>01</span><p><strong data-i18n="watchlist.f1t">One alert per incident</strong><small data-i18n="watchlist.f1c">Independent observations are correlated instead of duplicated.</small></p></div>
+          <div><span>02</span><p><strong data-i18n="watchlist.f2t">Confidence through confirmation</strong><small data-i18n="watchlist.f2c">Two or more sources strengthen the same finding.</small></p></div>
+          <div><span>03</span><p><strong data-i18n="watchlist.f3t">Visual operational status</strong><small data-i18n="watchlist.f3c">Honeycombs surface monitored, attention and critical states.</small></p></div>
+        </div>
+      </div>
+      <div class="showcase-image"><img src="assets/watchlist.png" alt="Dark Threat Radar Watchlist with honeycomb visualization"><span>WATCHLIST // OPERATIONAL VIEW</span></div>
+    </section>
+
+    <section class="section-shell section-block source-showcase">
+      <div class="source-image"><img src="assets/source-health.png" alt="Dark Threat Radar animated source health topology"><span>SOURCE HEALTH // 27 CONNECTORS</span></div>
+      <div class="showcase-copy">
+        <p class="eyebrow">05 // SOURCE HEALTH</p>
+        <h2 data-i18n="source.title">Collection you can inspect, not just trust.</h2>
+        <p data-i18n="source.copy">Each connector reports its own condition, last synchronization and errors. The animated topology exposes the entire ingestion path directly on the dashboard.</p>
+        <div class="source-categories"><span>VULNERABILITIES</span><span>MALWARE &amp; IOCS</span><span>NETWORK INTELLIGENCE</span><span>RANSOMWARE &amp; BREACHES</span><span>PHISHING</span><span>THREAT KNOWLEDGE</span></div>
+      </div>
+    </section>
+
+    <section id="deploy" class="deploy-section section-block">
+      <div class="section-shell deploy-inner">
+        <div>
+          <p class="eyebrow">06 // SELF-HOSTED BY DESIGN</p>
+          <h2 data-i18n="deploy.title">Own the engine. Own the data.</h2>
+          <p data-i18n="deploy.copy">Run Dark Threat Radar on your infrastructure with Docker Compose or native Linux. Threat records and protected credentials stay under your control.</p>
+        </div>
+        <div class="terminal" aria-label="Docker installation command">
+          <div><span></span><span></span><span></span><em>QUICKSTART</em></div>
+          <code><b>$</b> git clone https://github.com/fr3dux/dark-threat-radar.git</code>
+          <code><b>$</b> cd dark-threat-radar</code>
+          <code><b>$</b> python3 scripts/setup_admin.py</code>
+          <code><b>$</b> docker compose up -d</code>
+          <button class="copy-command" type="button" data-copy="git clone https://github.com/fr3dux/dark-threat-radar.git">COPY</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section-shell">
+      <div><p class="eyebrow">DARK THREAT RADAR // CTI ENGINE</p><h2 data-i18n="cta.title">Build a clearer threat picture.</h2><p data-i18n="cta.copy">Start with the open-source edition, inspect the architecture and deploy it in your own environment.</p></div>
+      <div class="final-actions"><a class="button button-primary" href="https://github.com/fr3dux/dark-threat-radar" rel="noreferrer" data-i18n="cta.github">View project on GitHub</a><a class="button button-secondary" href="mailto:contact@darkthreatradar.com" data-i18n="cta.contact">Contact</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <div class="brand"><span class="brand-mark"></span><span>DARK THREAT RADAR</span></div>
+    <p data-i18n="footer.copy">Autonomous Cyber Threat Intelligence. Open source under the MIT License.</p>
+    <div><a href="https://github.com/fr3dux/dark-threat-radar" rel="noreferrer">GitHub</a><a href="https://github.com/fr3dux/dark-threat-radar/blob/main/LICENSE" rel="noreferrer">MIT License</a></div>
+  </footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>
